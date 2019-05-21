@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+						<html>
+						<head>
+						<meta charset="utf-8">
+						<meta name="viewport" content="width=device-width, initial-scale=1">
+					    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+						<link rel="stylesheet" href="side.css">
+						<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+					    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+					    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+					    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+						<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+						<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+<script>
+function goBack() {
+window.history.back();
+}
+</script>
+
+<body>
+
+<div id="mySidenav" class="sidenav">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<a class="active" href="D:\kathu_KaHO_Docs\demo1.html">Teacher</a>
+<a href="D:\kathu_KaHO_Docs\demo2.html">Student</a>
+<a href=>Subject</a>
+<a href=>Activity</a>
+<a href=>Concern</a>
+<a href=>Compliment</a>
+<a href="D:\kathu_KaHO_Docs\demo7.html">Class-section</a>
+<a href=>Timetable</a>
+<a href=>Assessment</a>
+<a href=>Mark</a>
+<a href=>Lesson plan</a>
+<a href=>Event</a>
+<a href=>Tag</a> 
+<a href=>Observation</a>	
+</div>
+
+<div id="main" style="background-color:#106ebe;">
+
+<span style="font-size:18px;cursor:pointer" onclick="openNav()">&#9776; Menu</span>
+		
+<div class="dropdown"> 
+<img src="C:\Users\KaHO\Desktop\image.jpg" alt="Trulli"   style="border-radius: 10px; width:30px; height:25px">
+<button style="background-color:#106ebe;; margin-top:-6px; border:1px solid #106ebe;" type="button" data-toggle="dropdown">
+	                                                      
+<span>My Account</span>
+</button>
+<ul id="dropdown" class="dropdown-menu">
+<li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-cog" style="margin:10px;"></i>SCHOOL SETUP</a></li>
+<li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-user" style="margin:10px;"></i>PROFILE</a></li>
+<li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-sign-out-alt" style="margin:10px;"></i>LOGOUT</a></li>
+</ul>
+</div>
+
+</div>
+												
+<div id="demo" class="container_t">
+
+<div class="dropdown">
+    <button class="dbox" type="button" data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+	
+
+    <span class="caret"></span></button>
+	 
+	 
+	 <!-- Button trigger modal -->
+
+<!-- Modal -->
+
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"  style="color:white">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	 	
+<form>
+        <input   type="text"  style="border-bottom:1px solid grey;" placeholder="Enter admission number">
+		<input type="text" style="border-bottom:1px solid grey;" class="name1" placeholder="Enter student roll number"></br>
+
+		<input  style="border-bottom:1px solid grey;margin-top:40px"; placeholder="enter first na*"> 
+		<input  class="name1" style="border-bottom:1px solid grey;" placeholder="enter middle name"> 
+        <input  id="name3" style="border-bottom:1px solid grey;"  placeholder="enter last name"><br>
+
+		
+	    <input type="date"  style="border-bottom:1px solid grey;margin-top:30px;" placeholder="Teacher Date of birth"/>		
+		<input  type="date"  style="border-bottom:1px solid grey;"  placeholder="Joining Date"/></br>
+
+	    <label>Select Gender</label>
+	    <input type="radio" name="gender" value="male" checked> <label>Male</label>
+		<input  type="text" style="margin-left:250px;border-bottom:1px solid grey;margin-top:30px;" placeholder="Student Class"/></br>	
+		<input type="radio" name="gender" style="margin-left:107px;" value="female"><label>Female</label><br>
+			  
+		<input  type="text" style="margin-top:20px;border-bottom:1px solid grey;" placeholder="Enter Father Name"/>
+		<input  type="text"   style="margin-left:140px;border-bottom:1px solid grey;" placeholder="Enter Father Email"/>
+		<input  type="text" style="margin-top:20px;border-bottom:1px solid grey;" placeholder="Enter Father Phone number"/>
+		<input  type="text"   style="margin-left:140px;border-bottom:1px solid grey;" placeholder="Enter Father occupation"/>
+		<input  type="text"  style="margin-top:20px;border-bottom:1px solid grey;" placeholder="Enter mother Name"/>
+	    <input  type="text"   style="margin-left:140px;border-bottom:1px solid grey;" placeholder="Enter occupation Email"/>
+		<input  type="text" style="margin-top:20px;border-bottom:1px solid grey;" placeholder="Enter mother Phone number"/>
+		<input  type="text"   style="margin-left:140px;border-bottom:1px solid grey;" placeholder="Enter mother occupation"/>
+		<input  type="text" style="margin-top:20px;border-bottom:1px solid grey;" placeholder="Enter Local address"/>
+		<input  type="text"  style="margin-left:140px;border-bottom:1px solid grey;" placeholder="Enter parmanent address"/>
+		<input  type="text" style="margin-top:20px;border-bottom:1px solid grey;" placeholder="Enter student special notes"/><br>
+		<button type="button" class="btn btn-primary" style="margin-top:20px">Upload Student Image</button>
+    
+ </form> 
+      </div>
+      <div class="modal-footer">
+	    <button   type="button"  style="background:#08c283;margin-left:430px;border:none;color:white;padding:5px;font-size:15px">Add Teacher</button>
+		<button  type="button" class="close"data-dismiss="modal" style="background:#ff3333;border:none;color:white;padding:8px;font-size:15px" >Cancel</button>
+		 
+      </div>
+    </div>
+  </div>
+</div>
+	 
+	 
+	 
+	 <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Student</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true"  style="color:white">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+       	 	
+<form>
+        
+
+		<input  style="border-bottom:1px solid grey;margin-top:40px"; placeholder="enter first na*"> 
+		<input  class="name1" style="border-bottom:1px solid grey;" placeholder="enter middle name"> 
+        <input  id="name3" style="border-bottom:1px solid grey;"  placeholder="enter last name"><br>
+
+		
+	    <input type="date"  style="border-bottom:1px solid grey;margin-top:30px;" placeholder="Teacher Date of birth"/>		
+		<input  type="date"  style="border-bottom:1px solid grey;"  placeholder="Joining Date"/></br>
+
+	    <label>Select Gender</label>
+	    <input type="radio" name="gender" value="male" checked> <label>Male</label>
+		<input  type="text" style="margin-left:250px;border-bottom:1px solid grey;margin-top:30px;" placeholder="Student Class"></br>	
+		<input type="radio" name="gender" style="margin-left:107px;" value="female"><label>Female</label><br>
+			  
+		
+    
+ </form> 
+      </div>
+      <div class="modal-footer">
+	    <button   type="button"  style="background:#08c283;margin-left:430px;border:none;color:white;padding:5px;font-size:15px">Add Teacher</button>
+		<button  type="button" class="close"data-dismiss="modal" style="background:#ff3333;border:none;color:white;padding:8px;font-size:15px" >Cancel</button>
+		 
+      </div>
+    </div>
+  </div>
+</div>
+
+
+    <ul class="dropdown-menu">
+    <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+	<li style="color:black;font-size:12px;margin:10px;"><a href="D:\kathu_KaHO_Docs\page.html"><i class="fas fa-download" style="margin:10px;"></i>Download Teacher</a></li>  
+	<li>
+</ul>
+ 
+  </div>
+
+<a href="C:\Users\KaHO\Desktop" class="fas fa-cloud-upload-alt" id="upload" ></a>
+
+  <div class="table-responsive">
+  <div class="dropdown">
+
+<select >
+  <option value="" selected data-default>Select Column Name</option>
+  <option value="">Student Code</option>
+  <option value="">Student Name</option>
+</select>
+	
+<select >
+  <option value="" selected data-default>Select Option</option>
+  <option value="">Contains</option>
+  <option value="">Starts with</option>
+  <option value="">ends with</option>
+</select>
+
+    <input  type="search" placeholder="Type Here">
+    <button id="btn" class="search1" type="text" data-toggle="">Search</button>
+    <button class="search1" type="button" data-toggle="">Create</button>
+  
+  </div>
+ 
+  <table class="table table-hover " >
+
+<thead>
+      <tr class="head">
+    <th>Student Code/Admission No</th>
+    <th>Student Name</th>
+    <th>Class</th>
+    <th>Date Of Birth</th>
+    <th>Admission Date</th>
+    <th>Actions</th>
+      </tr>
+</thead>
+    <tbody>
+      <tr>
+        <td>0951040030600002</td>
+        <td>ajay</td>
+        <td>2</td>
+        <td>01/01/2012</td>
+        <td>04/02/2018</td>	
+        <td>
+    <div class="dropdown">
+    <button class="dbox" type="button" data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+	
+
+    <span class="caret"></span></button>
+
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher</li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px"  data-toggle="modal" data-target="#exampleModal3"><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+ 
+  </div>
+</td>
+      </tr>
+	  
+	  
+	  <tr>
+      <td>0951040030600005</td>
+        <td>abhay</td>
+        <td>2</td>
+        <td></td>
+        <td>04/11/2018</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button" data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+     <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+</td>
+
+      </tr>
+	<tr>
+        <td>0951040030600017</td>
+        <td>amit</td>
+        <td>2</td>
+        <td>10/05/2015</td>
+        <td>10/07/2018</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button" data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+     <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;>< a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+</td>
+      </tr>
+	  
+	  
+	  <tr>
+        <td>0951040030600019</td>
+        <td>adarsh</td>
+        <td>2</td>
+        <td>12/07/2018</td>
+        <td>12/07/2018</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button" data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+	  
+	<tr>
+       <td>0951040030600030</td>
+        <td>aman</td>
+        <td>3</td>
+        <td>15/01/2011</td>
+        <td>01/04/2017</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button" data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+    <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+	  
+	 <div> 
+	<tr>
+      <td>0951040030600057</td>
+        <td>abhishek</td>
+        <td>4</td>
+        <td>18/10/2009</td>
+        <td>01/04/2017</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button"  data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+	  
+	   <div> 
+	<tr>
+      <td>0951040030600058</td>
+        <td>amit varma</td>
+        <td>4</td>
+        <td>10/08/2018</td>
+        <td>01/04/2017</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button"  data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+	   <div> 
+	<tr>
+      <td>0951040030600059</td>
+        <td>amit vishyakarma</td>
+        <td>4</td>
+        <td>10/08/2018</td>
+        <td>18/05/2016</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button"  data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+	   <div> 
+	<tr>
+      <td>0951040030600063</td>
+        <td>adarsh yadav</td>
+        <td>4</td>
+        <td>05/02/2010</td>
+        <td>05/08/2017</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button"  data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+	   <div> 
+	<tr>
+      <td>0951040030600075</td>
+        <td>alok verma</td>
+        <td>4</td>
+        <td>01/01/2009</td>
+        <td>10/07/2018</td>	
+        <td> <div class="dropdown">
+    <button class="dbox" type="button"  data-toggle="dropdown"><i style="font-size:20px" class="fa">&#xf142;</i>
+    <span class="caret"></span></button>
+    <ul class="dropdown-menu">
+      <li style="color:black;font-size:12px;" data-toggle="modal" data-target="#exampleModal"><i class="fas fa-plus"  style="margin:10px;"></i >Add Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a href="#"><i class="fas fa-trash-alt" style="margin:10px;"></i>Delete Teacher </a></li>
+      <li style="color:black;font-size:12px;margin:10px;><a  href="#"pageview ><i class="fas fa-search" style="color:black;margin:10px;"> </i>View Teacher</a></li>
+    </ul>
+  </div>
+
+      </tr>
+
+	
+    </tbody>
+  </table>
+  </div>
+</div>  
+<script>
+			function openNav() {
+			  document.getElementById("mySidenav").style.width = "250px";
+			  document.getElementById("main").style.marginLeft = "250px";
+			  			  document.getElementById("demo").style.marginLeft = "250px";
+			 
+			}
+
+			function closeNav() {
+			  document.getElementById("mySidenav").style.width = "0";
+			  document.getElementById("main").style.marginLeft= "0";
+			  document.getElementById("demo").style.marginLeft= "10px";
+			  document.body.style.backgroundColor = "white";
+
+}
+</script>
+</body>
+</html> 
